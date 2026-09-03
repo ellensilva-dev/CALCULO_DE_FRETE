@@ -1,0 +1,22 @@
+print("-"*40)
+print("Seja Bem-vindo(a) ao CALCULO DE FRETE")
+print("Nosso frete é calculado de acordo com a região")
+print("SUL, SUDOESTE, CENTRO OESTE, NORTE, NORDESTE")
+regiao = str(input("Qual região deseja calcular? ")).upper()
+sul = (50)
+sudeste = (30)
+centro_oeste = (70)
+norte = (100)
+nordeste = (80)
+if regiao == "SUL":
+    print(f"Você selecionou: SUL, sendo o valor fixo de R${sul:.2f}")
+elif regiao == "SUDESTE":
+    print(f"Você selecionou SUDESTE, sendo o valor fico de R${sudeste:.2f}")
+elif regiao == 'CENTRO OESTE':
+    print(f"Você selecionou CENTRO-OESTE, sendo o valor fixo de R${centro_oeste:.2f}")
+elif regiao == 'NORTE':
+     print(f"Você selecionou NORTE, sendo o valor fixo de R${norte:.2f}")
+elif regiao == 'NORDESTE':
+    print(f"Sendo NORDESTE, o valor fixo é R${nordeste:.2f}")
+else:
+    print(f"Bom, certamente o que você digitou não é uma opção válida :(")
